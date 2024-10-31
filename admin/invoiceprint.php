@@ -440,10 +440,10 @@
 	<header>
 		<h1>Invoice</h1>
 		<address>
-			<p>HOTEL BLUE BIRD,</p>
-			<p>(+91) 9313346569</p>
+			<p>RENAL HOTEL,</p>
+			<p>0757671763</p>
 		</address>
-		<span><img alt="" src="../image/logo.jpg"></span>
+		<span><img alt="" src=""></span>
 	</header>
 	<article>
 		<h1>Recipient</h1>
@@ -475,23 +475,23 @@
 				<tr>
 					<td><span><?php echo $troom; ?></span></td>
 					<td><span><?php echo $days; ?> </span></td>
-					<td><span data-prefix>₹</span><span><?php echo $type_of_room; ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $type_of_room; ?></span></td>
 					<td><span><?php echo $nroom; ?> </span></td>
-					<td><span data-prefix>₹</span><span><?php echo $ttot; ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $ttot; ?></span></td>
 				</tr>
 				<tr>
 					<td><span><?php echo $bed; ?> Bed </span></td>
 					<td><span><?php echo $days; ?></span></td>
-					<td><span data-prefix>₹</span><span><?php echo $type_of_bed; ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $type_of_bed; ?></span></td>
 					<td><span><?php echo $nroom; ?> </span></td>
-					<td><span data-prefix>₹</span><span><?php echo $btot; ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $btot; ?></span></td>
 				</tr>
 				<tr>
 					<td><span><?php echo $meal; ?> </span></td>
 					<td><span><?php echo $days; ?></span></td>
-					<td><span data-prefix>₹</span><span><?php echo $type_of_meal ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $type_of_meal ?></span></td>
 					<td><span><?php echo $nroom; ?> </span></td>
-					<td><span data-prefix>₹</span><span><?php echo $mepr; ?></span></td>
+					<td><span data-prefix>UGX</span><span><?php echo $mepr; ?></span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -499,22 +499,22 @@
 		<table class="balance">
 			<tr>
 				<th><span>Total</span></th>
-				<td><span data-prefix>₹</span><span><?php echo $fintot; ?></span></td>
+				<td><span data-prefix>UGX</span><span><?php echo $fintot; ?></span></td>
 			</tr>
 			<tr>
 				<th><span>Amount Paid</span></th>
-				<td><span data-prefix>₹</span><span>0.00</span></td>
+				<td><span data-prefix>UGX</span><span>0.00</span></td>
 			</tr>
 			<tr>
 				<th><span>Balance Due</span></th>
-				<td><span data-prefix>₹</span><span><?php echo $fintot; ?></span></td>
+				<td><span data-prefix>UGX</span><span><?php echo $fintot; ?></span></td>
 			</tr>
 		</table>
 	</article>
 	<aside>
 		<h1><span>Contact us</span></h1>
 		<div>
-			<p align="center">Email :- pankhaniyatushar9@gmail.com || Web :- www.bluebird.com || Phone :- +91 9313346569 </p>
+			<p align="center">Email : marvintomusange@gmail.com <br> Web : www.renalhotel.com <br> Phone :0757671763 </p>
 		</div>
 	</aside>
 

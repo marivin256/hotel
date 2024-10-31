@@ -22,7 +22,11 @@ if($usermail == true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <title>Hotel blue bird</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Hotel Ronel Prototype</title>
     <!-- boot -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -34,15 +38,17 @@ if($usermail == true){
     <style>
       #guestdetailpanel{
         display: none;
+        position: absolute;
       }
       #guestdetailpanel .middle{
         height: 450px;
+        
       }
     </style>
 </head>
 
 <body>
-  <nav>
+  <!-- <nav>
     <div class="logo">
       <img class="bluebirdlogo" src="./image/bluebirdlogo.png" alt="logo">
       <p>BLUEBIRD</p>
@@ -54,9 +60,107 @@ if($usermail == true){
       <li><a href="#contactus">contact us</a></li>
       <a href="./logout.php"><button class="btn btn-danger">Logout</button></a>
     </ul>
-  </nav>
+  </nav> -->
 
-  <section id="firstsection" class="carousel slide carousel_section" data-bs-ride="carousel">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="logo">
+      <img class="bluebirdlogo" src="./image/bluebirdlogo.png" alt="logo">
+      <p>BLUEBIRD</p>
+    </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    <ul>
+      <li><a class="nav-item nav-link active" href="#firstsection" href="#firstsection">Home</a></li>
+      <li><a class="nav-item nav-link" href="#secondsection">Rooms</a></li>
+      <li><a class="nav-item nav-link" href="#thirdsection">Facilites</a></li>
+      <li><a class="nav-item nav-link" href="#contactus">contact us</a></li>
+      <a class="nav-item nav-link" href="./logout.php"><button class="btn btn-danger">Logout</button></a>
+    </ul>
+      
+    </div>
+  </div>
+</nav> -->
+
+<header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <img src="./image/logo2.png" alt="Ronel logo" />
+            <!-- <p>RONEL HOTEL</p> -->
+            
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <button class="btn nav__btn">Logout</button> -->
+        <a class="btn nav__btn" href="./logout.php"><button class="btn btn-danger">Logout</button></a>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <p>"WELCOME TO RONEL HOTEL"</p>
+        <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
+      </div>
+    </header>
+
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-in">CHECK-IN</label>
+            <input type="text" placeholder="Check In" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-out">CHECK-OUT</label>
+            <input type="text" placeholder="Check Out" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-user-fill"></i></span>
+          <div>
+            <label for="guest">GUEST</label>
+            <input type="text" placeholder="Guest" />
+          </div>
+        </div>
+        <div class="input__group input__btn">
+          <button class="btn">CHECH OUT</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="./image/bar4.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">The Best Holidays Start Here!</h2>
+        <p class="section__description">
+          With a focus on quality accommodations, personalized experiences, and
+          seamless booking, our platform is dedicated to ensuring that every
+          traveler embarks on their dream holiday with confidence and
+          excitement.
+        </p>
+        <div class="about__btn">
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+  <!-- <section id="firstsection" class="carousel slide carousel_section" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="carousel-image" src="./image/hotel1.jpg">
@@ -73,13 +177,13 @@ if($usermail == true){
 
         <div class="welcomeline">
           <h1 class="welcometag">Welcome to heaven on earth</h1>
-        </div>
+        </div> -->
 
       <!-- bookbox -->
       <div id="guestdetailpanel">
         <form action="" method="POST" class="guestdetailpanelform">
             <div class="head">
-                <h3>RESERVATION</h3>
+                <h3>RESERVATION</h3><br>
                 <i class="fa-solid fa-circle-xmark" onclick="closebox()"></i>
             </div>
             <div class="middle">
@@ -101,7 +205,7 @@ if($usermail == true){
 							endforeach;
 						?>
                     </select>
-                    <input type="text" name="Phone" placeholder="Enter Phoneno">
+                    <input type="text" name="Phone" placeholder="Enter Phone number">
                 </div>
 
                 <div class="line"></div>
@@ -112,7 +216,7 @@ if($usermail == true){
 						<option value selected >Type Of Room</option>
                         <option value="Superior Room">SUPERIOR ROOM</option>
                         <option value="Deluxe Room">DELUXE ROOM</option>
-						<option value="Guest House">GUEST HOUSE</option>
+						<!-- <option value="Guest House">GUEST HOUSE</option> -->
 						<option value="Single Room">SINGLE ROOM</option>
                     </select>
                     <select name="Bed" class="selectinput">
@@ -126,14 +230,14 @@ if($usermail == true){
                     <select name="NoofRoom" class="selectinput">
 						<option value selected >No of Room</option>
                         <option value="1">1</option>
-                        <!-- <option value="1">2</option>
-                        <option value="1">3</option> -->
+                        <option value="1">2</option>
+                        <option value="1">3</option>
                     </select>
                     <select name="Meal" class="selectinput">
 						<option value selected >Meal</option>
-                        <option value="Room only">Room only</option>
+                        <option value="Room only">Lunch</option>
                         <option value="Breakfast">Breakfast</option>
-						<option value="Half Board">Half Board</option>
+						<option value="Half Board">Fresh Ups</option>
 						<option value="Full Board">Full Board</option>
 					</select>
                     <div class="datesection">
@@ -201,7 +305,7 @@ if($usermail == true){
     </div>
   </section>
     
-  <section id="secondsection"> 
+  <!-- <section id="secondsection"> 
     <img src="./image/homeanimatebg.svg">
     <div class="ourroom">
       <h1 class="head">≼ Our room ≽</h1>
@@ -258,39 +362,208 @@ if($usermail == true){
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section id="thirdsection">
+  <section class="section__container room__container">
+      <p class="section__subheader">OUR LIVING ROOM</p>
+      <h2 class="section__header">The Most Memorable Rest Time Starts Here.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./image/assets/room-1.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Superior Room</h4>
+            <p>
+              Bask in luxury with breathtaking ocean views from your private
+              suite.
+            </p>
+            <h5>Starting from <span>$299/night</span></h5>
+            <button class="text-white border border-white bg-dark w-50 p-2 hover-bg-danger" onclick="openbookbox()">Book Now</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./image/assets/room-2.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Delux Room</h4>
+            <p>
+              Experience urban elegance and modern comfort in the heart of the
+              city.
+            </p>
+            <h5>Starting from <span>$199/night</span></h5>
+            <button class="text-white border border-white bg-dark w-50 p-2" onclick="openbookbox()">Book Now</button>
+          </div>
+        </div>
+
+       
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./image/assets/room-3.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Single Room</h4>
+            <p>
+              Spacious and perfect for creating cherished memories
+              with loved ones.
+            </p>
+            <h5>Starting from <span>$249/night</span></h5>
+            <button class="text-white border border-white bg-dark w-50 p-2" onclick="openbookbox()">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <div class="service__content">
+          <p class="section__subheader">SERVICES</p>
+          <h2 class="section__header">We Only Strive For The Best.</h2>
+          <ul class="service__list">
+            <li>
+              <span><i class="ri-shield-star-line"></i></span>
+              High Class Security
+            </li>
+            <li>
+              <span><i class="ri-24-hours-line"></i></span>
+              24 Hours Room Service
+            </li>
+            <li>
+              <span><i class="ri-headphone-line"></i></span>
+              Conference Room
+            </li>
+            <li>
+              <span><i class="ri-map-2-line"></i></span>
+              Tourist Guide Support
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__content">
+        <div class="banner__card">
+          <h4>25+</h4>
+          <p>Rooms Available</p>
+        </div>
+        <div class="banner__card">
+          <h4>350+</h4>
+          <p>Bookings Completed</p>
+        </div>
+        <div class="banner__card">
+          <h4>600+</h4>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- facilitie -->
+    <section id="thirdsection">
     <h1 class="head">≼ Facilities ≽</h1>
     <div class="facility">
-      <div class="box">
-        <h2>Swiming pool</h2>
+      <div class="box room__card">
+        <h2>Swimming pool</h2>
       </div>
-      <div class="box">
+      <div class="box room__card">
         <h2>Spa</h2>
       </div>
-      <div class="box">
+      <div class="box room__card">
         <h2>24*7 Restaurants</h2>
       </div>
-      <div class="box">
+      <div class="box room__card">
         <h2>24*7 Gym</h2>
       </div>
-      <div class="box">
-        <h2>Heli service</h2>
+      <div class="box room__card">
+        <h2>Confrence room</h2>
       </div>
     </div>
   </section>
 
-  <section id="contactus">
-    <div class="social">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-solid fa-envelope"></i>
-    </div>
-    <div class="createdby">
-      <h5>Created by @tushar</h5>
-    </div>
-  </section>
+    <section class="explore" id="explore">
+      <p class="section__subheader">EXPLORE</p>
+      <h2 class="section__header">What's New Today.</h2>
+      <div class="explore__bg">
+        <div class="explore__content">
+          <p class="section__description">Just In...</p>
+          <h4>A New Menu Is Available In Our Hotel.</h4>
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="assets/logo.png" alt="Ronel logo" /></a>
+          </div>
+          <p class="section__description">
+            Discover a world of comfort, luxury, and adventure as you explore
+            our curated selection, making every moment of your getaway
+            truly extra Ordinary.
+          </p>
+          <button class=" text-white border border-white bg-dark w-50 p-2">Book Now</button>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Browse Locatio</a></li>
+            <li><a href="#">Special Offers & Packages</a></li>
+            <li><a href="#">Room Types & Amenities</a></li>
+            <li><a href="#">Customer Reviews & Ratings</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="#">Concierge Assistance</a></li>
+            <li><a href="#">Flexible Booking Options</a></li>
+            <li><a href="#">Wellness & Recreation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="#">ranelhotel@gmail.com</a></li>
+            <li><a href="#">+256757671763/+256761700498</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="#"><i  class="fa-brands fa-instagram" id="f"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="2em" viewBox="0 0 24 24"><g fill="currentColor"><path d="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z;M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5z"/></path><path d="M3 2h5v0h-5zM16 22h5v0h-5z"><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M3 2h5v0h-5zM16 22h5v0h-5z;M3 2h5v2h-5zM16 22h5v-2h-5z"/></path><path d="M18.5 2h3.5L22 2h-3.5z"><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"/></path></g></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Ranel Hotel. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./javascript/main.js"></script>
+
+ 
+
+  
 </body>
 
 <script>
